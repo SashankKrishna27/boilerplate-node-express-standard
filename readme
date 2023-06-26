@@ -1,0 +1,15 @@
+Welcome to the boilerplate project for Node.js applications with Webpack, Express, database connections, graceful shutdown, clustering, EsLint, Prettier, and hierarchy-based codebase. This boilerplate is designed to help you get started quickly with your Node.js project by providing a solid foundation for building scalable, maintainable, and high-performance applications.
+
+ To get started, simply clone this repository and start building your application. The boilerplate comes with a pre-configured setup that includes all the necessary tools and frameworks to help you develop your application efficiently. Here is an overview of the features included in the boilerplate:
+
+ - Webpack: A powerful module bundler that helps you bundle your code and assets for production deployment.
+- Express: A fast and lightweight web framework for Node.js that makes it easy to build web applications.
+- Database connections: The boilerplate provides support for connecting to mongoDB database. Update your connection string in your env file before running the application.
+- Graceful shutdown: The boilerplate includes a graceful shutdown mechanism that ensures your application shuts down cleanly, preventing data loss or other issues.
+- Clustering: The boilerplate provides built-in support for clustering, which helps you scale your application horizontally to handle more traffic and load.
+- EsLint: EsLint is a code analysis tool that helps you identify and fix code quality issues in your codebase.
+- Prettier: Prettier is a code formatter that helps you maintain consistent code formatting across your entire codebase.
+- Hierarchy-based codebase: The boilerplate includes a well-structured codebase that follows a hierarchy-based approach, making it easy to navigate and maintain your code.
+- Debugger: This boilerplate provides a launch config for a quick accesss of debugger. 
+
+ This boilerplate is designed to be deployed as an npm package, making it easy to share and reuse across different projects. We hope you find this boilerplate useful and look forward to seeing the amazing applications you build with it!
