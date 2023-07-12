@@ -19,8 +19,8 @@ const start = async () => {
     })
     app.use('/', testRouter)
 
-    app.use((req,res) => {
-        return res.status(404).json({message: 'Route Not Found'});
+    app.use((req, res) => {
+        return res.status(404).json({ message: 'Route Not Found' })
     })
 
     app.use(errorHandler)
@@ -52,8 +52,8 @@ if (process.env.NODE_ENV === 'production') {
         lifetime: Infinity, // Min time to keep cluster alive (ms)
         grace: 5000, // Grace period between signal and hard shutdown (ms)
         signals: ['SIGTERM', 'SIGINT'], // Signals that trigger a shutdown (proxied to workers)
-    }).then(() =>{
-        console.log("Worker started at "+ process.pid)
+    }).then(() => {
+        console.log('Worker started at ' + process.pid)
     })
 } else {
     start()

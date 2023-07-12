@@ -11,7 +11,7 @@ module.exports = {
     entry: './src/index.js',
     devtool: process.env.NODE_ENV === 'production' ? false : 'eval',
     resolve: {
-        extensions: ['.mjs', '.json', '.ts', '.js'],
+        extensions: ['*', '.mjs', '.json', '.ts', '.js'],
         symlinks: false,
         cacheWithContext: false,
     },
@@ -26,8 +26,8 @@ module.exports = {
         rules: [
             // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
             {
-                test: /\.(tsx?)$/,
-                loader: 'ts-loader',
+                test: /\.(js|jsx|tsx|ts)$/,
+                loader: 'babel-loader',
                 exclude: [
                     [
                         path.resolve(__dirname, 'node_modules'),
@@ -35,10 +35,6 @@ module.exports = {
                         path.resolve(__dirname, 'build'),
                     ],
                 ],
-                options: {
-                    transpileOnly: true,
-                    experimentalWatchApi: true,
-                },
             },
             {
                 test: /\.html$/i,

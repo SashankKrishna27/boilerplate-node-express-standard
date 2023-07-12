@@ -7,7 +7,7 @@
         "dev": "NODE_ENV=development webpack -w",
         "start": "NODE_ENV=production webpack -w",
         "build": "webpack --config webpack.config.js",
-        "test": "node src/index.js",
+        "test": "node build/output.js",
         "format:check": "prettier --check .",
         "format:write": "prettier --write .",
         "lint:check": "eslint .",
@@ -27,7 +27,7 @@
     ],
     "author": "Sashank",
     "license": "ISC",
-    "dependencies": {
+    "peerDependencies": {
         "cors": "^2.8.5",
         "dotenv": "^16.3.1",
         "express": "^4.18.2",
@@ -36,8 +36,10 @@
         "throng": "^5.0.0"
     },
     "devDependencies": {
-        "@babel/core": "^7.22.5",
-        "@babel/preset-env": "^7.22.5",
+        "@babel/cli": "^7.22.6",
+        "@babel/core": "^7.22.8",
+        "@babel/preset-env": "^7.22.7",
+        "@babel/preset-typescript": "^7.22.5",
         "@types/webpack-env": "^1.18.1",
         "babel-loader": "^9.1.2",
         "clean-webpack-plugin": "^4.0.0",

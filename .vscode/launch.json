@@ -20,9 +20,7 @@
             "type": "node",
             "request": "launch",
             "name": "Debugger",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
+            "skipFiles": ["<node_internals>/**"],
             "program": "${workspaceFolder}/src/index.js"
         }
     ]
