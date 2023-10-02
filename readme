@@ -2,7 +2,7 @@ Welcome to the boilerplate project for Node.js applications with Webpack, Expres
 
  To get started, simply clone this repository and start building your application. The boilerplate comes with a pre-configured setup that includes all the necessary tools and frameworks to help you develop your application efficiently. Here is an overview of the features included in the boilerplate:
 
- - Webpack: A powerful module bundler that helps you bundle your code and assets for production deployment.
+- Webpack: A powerful module bundler that helps you bundle your code and assets for production deployment.
 - Express: A fast and lightweight web framework for Node.js that makes it easy to build web applications.
 - Database connections: The boilerplate provides support for connecting to mongoDB database. Update your connection string in your env file before running the application.
 - Graceful shutdown: The boilerplate includes a graceful shutdown mechanism that ensures your application shuts down cleanly, preventing data loss or other issues.

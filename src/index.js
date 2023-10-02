@@ -3,7 +3,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 import db from '../db'
 import os from 'os'
-import testRouter from './routes/testRouter'
+import userRouter from './routes/userRouter'
 import { errorHandler } from './middleware/errorHandler'
 require('dotenv').config()
 
@@ -17,7 +17,7 @@ const start = async () => {
     app.use('/', (req, res) => {
         res.status(200).json({ message: 'Success' })
     })
-    app.use('/', testRouter)
+    app.use('/', userRouter)
 
     app.use((req, res) => {
         return res.status(404).json({ message: 'Route Not Found' })
